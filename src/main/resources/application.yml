@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: ai-code-generator-backend
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+
+# springdoc-openapi
+springdoc:
+  group-configs:
+    - group: 'default'
+      paths-to-match: '/**'
+      packages-to-scan: com.raven.aicodegenerator.controller
+
+# knife4j-reinforcement
+knife4j:
+  enable: true
+  setting:
+    language: zh_cn
